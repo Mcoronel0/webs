@@ -3,48 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="logo.png" alt="Logo Estudio Jurídico" style="max-width: 150px; height: auto; margin-bottom: 10px;">
+    <meta name="description" content="Estudio Jurídico - Soluciones legales confiables y personalizadas.">
+    <title>Estudio Jurídico</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header style="background-image: url('encabezado.jpg'); height: 50vh; background-size: cover; background-position: center;">
-        <div style="text-align: center; padding: 20px; color: white; background: rgba(0, 0, 0, 0.5);">
-            <h1>Estudio Jurídico</h1>
-            <p>Confianza y profesionalismo a tu servicio</p>
+    <!-- Header con logo y navegación -->
+    <header>
+        <nav>
+            <img src="logo.png" alt="Logo Estudio Jurídico" class="logo">
+            <ul>
+                <li><a href="#about-us">Nosotros</a></li>
+                <li><a href="#practice-areas">Áreas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-image">
+            <h1>Confianza y Profesionalismo</h1>
+            <p>Soluciones legales a tu alcance</p>
         </div>
     </header>
 
-    <!-- Sobre Nosotros -->
-    <section id="about-us" style="padding: 20px;">
-        <img src="nosotros.jpg.jpeg" alt="Equipo de abogados" style="width: 100%; height: auto;">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos un equipo comprometido en ofrecer soluciones legales de alta calidad y confianza para nuestros clientes.</p>
+    <!-- Sección Nosotros -->
+    <section id="about-us" class="section">
+        <img src="nosotros.jpg" alt="Sobre Nosotros" class="section-image">
+        <div class="section-content">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo de abogados comprometidos en ofrecer un servicio personalizado y de alta calidad.</p>
+        </div>
     </section>
 
-    <!-- Áreas de Práctica -->
-    <section id="practice-areas" style="padding: 20px;">
-        <img src="https://images.pexels.com/photos/6077852/pexels-photo-6077852.jpeg" alt="Dama de la Justicia" style="width: 100%; height: auto;">
-        <h2>Áreas de Práctica</h2>
-        <ul>
-            <li>Derecho Civil</li>
-            <li>Derecho Penal</li>
-            <li>Derecho Laboral</li>
-            <li>Asesoramiento Empresarial</li>
-        </ul>
+    <!-- Sección Áreas de Práctica -->
+    <section id="practice-areas" class="section">
+        <img src="areas.jpg" alt="Áreas de Práctica" class="section-image">
+        <div class="section-content">
+            <h2>Áreas de Práctica</h2>
+            <ul>
+                <li>Derecho Civil</li>
+                <li>Derecho Penal</li>
+                <li>Derecho Laboral</li>
+                <li>Asesoramiento Empresarial</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contact" style="padding: 20px;">
-        <img src="https://images.pexels.com/photos/6077850/pexels-photo-6077850.jpeg" alt="Contacto" style="width: 100%; height: auto;">
-        <h2>Contacto</h2>
-        <p>Email: contacto@estudiojuridico.com</p>
-        <p>Teléfono: +54 123 456 789</p>
-        <p>Dirección: Calle Principal 123, Ciudad</p>
+    <!-- Sección Contacto -->
+    <section id="contact" class="section">
+        <div class="section-content">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer style="text-align: center; padding: 10px; background-color: #333; color: white;">
+    <footer>
         <p>© 2024 Estudio Jurídico - Todos los derechos reservados.</p>
     </footer>
 </body>

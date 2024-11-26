@@ -1,6 +1,4 @@
-// script.js
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Gracias por contactarnos. Nos pondremos en contacto pronto.');
-    this.reset();
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
 });

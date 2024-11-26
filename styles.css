@@ -1,76 +1,107 @@
-/* styles.css */
+/* General styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    color: #333;
+    padding: 0;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #333;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
+header .logo {
+    max-width: 100px;
+    height: auto;
+    margin: 10px;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
-    display: flex;
-    margin: 0;
     padding: 0;
 }
 
-header nav ul li {
-    margin-left: 20px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-header nav ul li a {
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
+    font-weight: bold;
 }
 
-header nav ul li a:hover {
-    color: #007bff;
+.header-image {
+    background-image: url('encabezado.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
 }
 
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Section Styles */
 .section {
-    padding: 40px 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 
-#contactForm input, #contactForm textarea {
-    width: 100%;
-    margin-bottom: 15px;
+.section-image {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.section-content {
+    max-width: 50%;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
     padding: 10px;
-    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-#contactForm button {
-    background-color: #007bff;
-    color: #fff;
+form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-#contactForm button:hover {
+form button:hover {
     background-color: #0056b3;
 }
 
+/* Footer */
 footer {
-    background-color: #1a1a1a;
-    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }
