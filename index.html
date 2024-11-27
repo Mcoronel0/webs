@@ -3,71 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Estudio Jurídico - Soluciones legales confiables y personalizadas.">
-    <title>Estudio Jurídico</title>
+    <title>MC Estudio Jurídico</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Header con logo y navegación -->
+    <!-- Pantalla de carga -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Encabezado -->
     <header>
+        <div class="logo">
+            <h1>MC Estudio Jurídico</h1>
+        </div>
         <nav>
-            <img src="logo.png" alt="Logo Estudio Jurídico" class="logo">
             <ul>
-                <li><a href="#about-us">Nosotros</a></li>
-                <li><a href="#practice-areas">Áreas</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <div class="header-image">
-            <h1>Confianza y Profesionalismo</h1>
-            <p>Soluciones legales a tu alcance</p>
-        </div>
     </header>
 
+    <!-- Sección de bienvenida -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenidos a MC Estudio Jurídico</h2>
+            <p>Defendemos tus derechos con profesionalismo y dedicación.</p>
+        </div>
+    </section>
+
     <!-- Sección Nosotros -->
-    <section id="about-us" class="section">
-        <img src="nosotros.jpg" alt="Sobre Nosotros" class="section-image">
-        <div class="section-content">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos un equipo de abogados comprometidos en ofrecer un servicio personalizado y de alta calidad.</p>
+    <section id="nosotros" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>MC Estudio Jurídico está liderado por expertos en derecho, comprometidos en ofrecer soluciones legales personalizadas y eficaces para cada cliente.</p>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service">
+                <h3>Asesoramiento Legal</h3>
+                <p>Consultoría y orientación jurídica en diversas áreas del derecho.</p>
+            </div>
+            <div class="service">
+                <h3>Defensa Penal</h3>
+                <p>Representación en procesos penales con ética y profesionalismo.</p>
+            </div>
+            <div class="service">
+                <h3>Contratos</h3>
+                <p>Redacción y revisión de contratos civiles y comerciales.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Sección Áreas de Práctica -->
-    <section id="practice-areas" class="section">
-        <img src="areas.jpg" alt="Áreas de Práctica" class="section-image">
-        <div class="section-content">
-            <h2>Áreas de Práctica</h2>
-            <ul>
-                <li>Derecho Civil</li>
-                <li>Derecho Penal</li>
-                <li>Derecho Laboral</li>
-                <li>Asesoramiento Empresarial</li>
-            </ul>
-        </div>
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+            <p id="form-message" class="hidden">Gracias por tu mensaje. Nos pondremos en contacto pronto.</p>
+        </form>
     </section>
 
-    <!-- Sección Contacto -->
-    <section id="contact" class="section">
-        <div class="section-content">
-            <h2>Contacto</h2>
-            <form id="contact-form">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- Pie de página -->
     <footer>
-        <p>© 2024 Estudio Jurídico - Todos los derechos reservados.</p>
+        <p>&copy; 2024 MC Estudio Jurídico. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
