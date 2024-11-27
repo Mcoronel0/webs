@@ -1,6 +1,5 @@
 /* Hero */
 .hero {
-    position: relative; /* Asegúrate de que el contenedor tenga posicionamiento relativo */
     height: 100vh;
     background: url('hero.jpg') no-repeat center center/cover;
     display: flex;
@@ -10,26 +9,35 @@
     color: #fff;
 }
 
-/* Capa de opacidad sobre la imagen */
-.hero::before {
-    content: "";
-    position: absolute; /* La capa se posiciona sobre la imagen */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
-    z-index: 1; /* Asegura que esté por encima de la imagen, pero debajo del texto */
-}
-
-/* El texto y botones estarán sobre la capa de opacidad */
-.hero .container {
-    position: relative;
-    z-index: 2;
-}
-
 /* Hover Cards */
 .card:hover {
     transform: scale(1.05);
     transition: 0.3s ease;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Espaciado desde el borde inferior */
+    right: 20px; /* Espaciado desde el borde derecho */
+    width: 60px; /* Tamaño del botón */
+    height: 60px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: #25d366; /* Color verde característico de WhatsApp */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Efecto de sombra más pronunciado */
 }
