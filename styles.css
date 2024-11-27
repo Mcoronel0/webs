@@ -1,10 +1,23 @@
-/* Pantalla de carga */
+/* Navbar fija */
+.navbar {
+    padding: 1rem 0;
+}
 
+/* Hero */
 .hero {
     background: url('encabezado.jpg') no-repeat center center/cover;
 }
 
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero .btn {
+    font-size: 1.25rem;
+}
+
+/* Tarjetas de servicios */
 .card:hover {
     transform: translateY(-10px);
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
