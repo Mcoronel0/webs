@@ -5,7 +5,7 @@
 
 /* Hero */
 .hero {
-    background: url('encabezado.jpg') no-repeat center center/cover;
+    background: ('encabezado.jpg') no-repeat center center/cover;
 }
 
 .hero h1 {
