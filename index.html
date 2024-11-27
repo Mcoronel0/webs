@@ -8,14 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <!-- JavaScript -->
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">MC Estudio Jurídico</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -32,49 +28,59 @@
         </div>
     </nav>
 
-    <!-- Sección Hero -->
-    <section id="inicio" class="bg-dark text-white text-center d-flex align-items-center justify-content-center vh-100">
-        <div class="container">
+    <!-- Hero -->
+    <header id="inicio" class="hero">
+        <div class="container text-center text-white">
             <h1 class="display-4">Bienvenidos a MC Estudio Jurídico</h1>
-            <p class="lead">Soluciones legales profesionales y personalizadas.</p>
+            <p class="lead">Comprometidos en brindar soluciones legales personalizadas y profesionales.</p>
             <a href="#contacto" class="btn btn-primary btn-lg mt-3">Contáctanos</a>
         </div>
-    </section>
+    </header>
 
-    <!-- Sección Nosotros -->
+    <!-- Nosotros -->
     <section id="nosotros" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Sobre Nosotros</h2>
-            <p class="text-center lead">En MC Estudio Jurídico, contamos con un equipo de abogados experimentados comprometidos en brindar soluciones jurídicas eficaces en diversas áreas del derecho.</p>
+            <p class="text-center lead">En MC Estudio Jurídico contamos con un equipo de profesionales dedicados a garantizar soluciones eficaces en diversas áreas del derecho.</p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5>Visión</h5>
+                    <p>Ser líderes en la prestación de servicios legales con un enfoque humano y ético.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Misión</h5>
+                    <p>Proveer asesoramiento legal de calidad adaptado a las necesidades de nuestros clientes.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Sección Servicios -->
-    <section id="servicios" class="bg-light py-5">
+    <!-- Servicios -->
+    <section id="servicios" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">Nuestros Servicios</h2>
-            <div class="row g-4">
+            <div class="row">
                 <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
+                    <div class="card shadow">
+                        <div class="card-body">
                             <h5 class="card-title">Asesoramiento Legal</h5>
-                            <p class="card-text">Orientación jurídica en derecho civil, comercial y laboral.</p>
+                            <p class="card-text">Brindamos orientación en casos civiles, laborales, y penales.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Defensa Penal</h5>
-                            <p class="card-text">Representación en procesos penales con ética y profesionalismo.</p>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Representación Judicial</h5>
+                            <p class="card-text">Defendemos los intereses de nuestros clientes con profesionalismo.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Contratos</h5>
-                            <p class="card-text">Redacción y revisión de contratos civiles y comerciales.</p>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Redacción de Contratos</h5>
+                            <p class="card-text">Elaboramos documentos legales precisos y confiables.</p>
                         </div>
                     </div>
                 </div>
@@ -82,27 +88,28 @@
         </div>
     </section>
 
-    <!-- Sección Contacto -->
+    <!-- Contacto -->
     <section id="contacto" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Contáctanos</h2>
-            <form id="contact-form" class="row g-3">
-                <div class="col-md-6">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
+            <form id="contact-form" class="w-75 mx-auto">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
                 </div>
-                <div class="col-md-6">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
                 </div>
-                <div class="col-md-6">
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono" required>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="phone">
                 </div>
-                <div class="col-12">
-                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Mensaje" required></textarea>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
                 </div>
-                <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                </div>
-                <div id="form-message" class="text-center mt-3 text-success d-none">Gracias por tu mensaje. Nos pondremos en contacto pronto.</div>
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
             </form>
         </div>
     </section>
@@ -111,5 +118,10 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 MC Estudio Jurídico. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="script.js"></script>
 </body>
 </html>
