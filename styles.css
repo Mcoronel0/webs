@@ -1,4 +1,10 @@
+
+.navbar-logo {
+    width: 50px;
+    height: auto;
+}
 /* Hero */
+
 .hero {
     position: relative; /* Asegúrate de que el contenedor tenga posicionamiento relativo */
     height: 100vh;
@@ -35,16 +41,24 @@
     transition: 0.3s ease;
 }
 
+
+/* Imagenes de servicios */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
 /* Botón flotante de WhatsApp */
 .whatsapp-button {
     position: fixed;
-    bottom: 20px; /* Espaciado desde el borde inferior */
-    right: 20px; /* Espaciado desde el borde derecho */
-    width: 60px; /* Tamaño del botón */
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
     height: 60px;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    background-color: #25d366; /* Color verde característico de WhatsApp */
-    border-radius: 50%; /* Forma circular */
+    z-index: 1000;
+    background-color: #25d366;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,6 +72,6 @@
 }
 
 .whatsapp-button:hover {
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Efecto de sombra más pronunciado */
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }

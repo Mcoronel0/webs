@@ -13,7 +13,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">MC Estudio Jurídico</a>
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="MC Estudio Jurídico" class="navbar-logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,13 +43,14 @@
     <section id="nosotros" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Sobre Nosotros</h2>
-            <p class="text-center lead">En MC Estudio Jurídico contamos con un equipo de profesionales dedicados a garantizar soluciones eficaces en diversas áreas del derecho.</p>
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <h5>Visión</h5>
-                    <p>Ser líderes en la prestación de servicios legales con un enfoque humano y ético.</p>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="about-us.jpg" alt="Equipo Jurídico" class="img-fluid rounded">
                 </div>
                 <div class="col-md-6">
+                    <p class="lead">En MC Estudio Jurídico contamos con un equipo de profesionales dedicados a garantizar soluciones eficaces en diversas áreas del derecho.</p>
+                    <h5>Visión</h5>
+                    <p>Ser líderes en la prestación de servicios legales con un enfoque humano y ético.</p>
                     <h5>Misión</h5>
                     <p>Proveer asesoramiento legal de calidad adaptado a las necesidades de nuestros clientes.</p>
                 </div>
@@ -62,6 +65,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card shadow">
+                        <img src="service1.jpg" alt="Asesoramiento Legal" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Asesoramiento Legal</h5>
                             <p class="card-text">Brindamos orientación en casos civiles, laborales, y penales.</p>
@@ -70,6 +74,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card shadow">
+                        <img src="service2.jpg" alt="Representación Judicial" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Representación Judicial</h5>
                             <p class="card-text">Defendemos los intereses de nuestros clientes con profesionalismo.</p>
@@ -78,6 +83,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card shadow">
+                        <img src="service3.jpg" alt="Redacción de Contratos" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Redacción de Contratos</h5>
                             <p class="card-text">Elaboramos documentos legales precisos y confiables.</p>
@@ -88,36 +94,45 @@
         </div>
     </section>
 
-    <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">
-        <img src="whatsapp-logo.png" alt="WhatsApp" />
-    </a>
-
     <!-- Contacto -->
     <section id="contacto" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Contáctanos</h2>
-            <form id="contact-form" class="w-75 mx-auto">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" required>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" required>
+                <div class="col-md-6">
+                    <h5>Ubicación</h5>
+                    <p>Calle Ficticia 123, Ciudad, País</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Teléfono</label>
-                    <input type="tel" class="form-control" id="phone">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Enviar</button>
-            </form>
+            </div>
         </div>
     </section>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5491234567890" target="_blank" class="whatsapp-button">
+        <img src="whatsapp-logo.png" alt="WhatsApp">
+    </a>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
@@ -126,7 +141,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- JS Personalizado -->
     <script src="script.js"></script>
 </body>
 </html>
