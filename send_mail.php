@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Configuración del correo
-    $to = "tu_correo@gmail.com"; // Cambia este correo al destino.
+    $to = "mauro.nicolas.coronel@gmail.com"; // Cambia este correo al destino.
     $subject = "Nuevo mensaje del formulario de contacto";
     
     // Obtener los datos del formulario
