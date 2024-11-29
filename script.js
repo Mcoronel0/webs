@@ -10,11 +10,14 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     })
         .then(response => {
             if (response.ok) {
-                // Mostrar el modal de agradecimiento
-                const thankYouModal = new bootstrap.Modal(document.getElementById("thankYouModal"));
-                thankYouModal.show();
-                // Reiniciar el formulario después de mostrar el modal
+                // Mostrar el snackbar de agradecimiento
+                var snackbar = document.getElementById("snackbar");
+                snackbar.className = "show"; // Activar la clase 'show' para mostrar el snackbar
+                // Reiniciar el formulario después de mostrar el snackbar
                 this.reset();
+                setTimeout(function() {
+                    snackbar.className = snackbar.className.replace("show", ""); // Ocultar el snackbar después de 3 segundos
+                }, 3000);
             } else {
                 alert("Hubo un problema al enviar tu mensaje. Por favor, intenta nuevamente.");
             }

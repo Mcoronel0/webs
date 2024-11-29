@@ -41,147 +41,47 @@
         </div>
     </header>
 
-    <!-- Nosotros -->
-    <section id="nosotros" class="py-5">
+    <!-- Contacto -->
+    <section id="contacto" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Sobre Nosotros</h2>
+            <h2 class="text-center mb-4">Contáctanos</h2>
             <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="abogados.jpg" alt="Equipo Jurídico" class="img-fluid rounded">
+                <div class="col-md-6">
+                    <form id="contact-form" method="POST">
+                        <!-- Campos ocultos para configuración de FormSubmit -->
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <!-- Campos del formulario -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ingresa tu teléfono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
                 </div>
                 <div class="col-md-6">
-                    <p class="lead">En MC Estudio Jurídico contamos con un equipo de profesionales dedicados a garantizar soluciones eficaces en diversas áreas del derecho.</p>
-                    <h5>Visión</h5>
-                    <p>Ser líderes en la prestación de servicios legales con un enfoque humano y ético.</p>
-                    <h5>Misión</h5>
-                    <p>Proveer asesoramiento legal de calidad adaptado a las necesidades de nuestros clientes.</p>
+                    <h5>Ubicación</h5>
+                    <p>Calle Ficticia 123, Ciudad, País</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Nuestros Servicios</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card shadow">
-                        <img src="asesoramiento.jpg" alt="Asesoramiento Legal" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Asesoramiento Legal</h5>
-                            <p class="card-text">Brindamos orientación en casos civiles, laborales, y penales.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow">
-                        <img src="representacion.jpg" alt="Representación Judicial" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Representación Judicial</h5>
-                            <p class="card-text">Defendemos los intereses de nuestros clientes con profesionalismo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow">
-                        <img src="redaccion.jpg" alt="Redacción de Contratos" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Redacción de Contratos</h5>
-                            <p class="card-text">Elaboramos documentos legales precisos y confiables.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-<section id="contacto" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Contáctanos</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <form id="contact-form" method="POST">
-                    <!-- Campos ocultos para configuración de FormSubmit -->
-                    <input type="hidden" name="_captcha" value="false">
-                    
-                    <!-- Modal de agradecimiento -->
-                    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="thankYouModalLabel" align="center">¡Gracias por contactarnos!</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Nos pondremos en contacto contigo lo antes posible.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Campos del formulario -->
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ingresa tu teléfono">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                </form>
-            </div>
-            <div class="col-md-6">
-                <h5>Ubicación</h5>
-                <p>Calle Ficticia 123, Ciudad, País</p>
-                <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Nuestras Redes -->
-<section id="redes" class="py-5">
-    <div class="container text-center">
-        <h2 class="mb-4">Nuestras Redes</h2>
-        <p>Conéctate con nosotros a través de nuestras redes sociales.</p>
-        <div class="social-icons">
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/tu_usuario" target="_blank" class="social-icon">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/tu_usuario" target="_blank" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <!-- Twitter -->
-            <a href="https://twitter.com/tu_usuario" target="_blank" class="social-icon">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/tu_usuario" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>
-    </div>
-</section>
-    <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/5491234567890" target="_blank" class="whatsapp-button">
-        <img src="whatsapp-logo.png" alt="WhatsApp">
-    </a>
+    <!-- Snackbar -->
+    <div id="snackbar">Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.</div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
@@ -191,7 +91,5 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-
-
 </body>
 </html>
