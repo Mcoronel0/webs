@@ -90,31 +90,19 @@
 /* Botón flotante de WhatsApp */
 .whatsapp-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    z-index: 1000;
-    background-color: #25d366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px;  /* Distancia desde la derecha */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
 }
 
-.whatsapp-button img {
-    width: 35px;
-    height: 35px;
+.whatsapp-icon {
+    width: 60px;  /* Tamaño del ícono */
+    height: 60px; /* Tamaño del ícono */
+    border-radius: 120%; /* Forma circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra discreta */
+    cursor: pointer;
+    background-color: #25D366; /* Color verde de WhatsApp */
 }
-
-.whatsapp-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-}
-
-
 
 
 /* Estilos para los iconos de redes sociales */
