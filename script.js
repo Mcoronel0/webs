@@ -1,5 +1,5 @@
 document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault();  // Evita la redirección del formulario
+    e.preventDefault();  // Evita que el formulario recargue la página
 
     const formData = new FormData(this);
 
