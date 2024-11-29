@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para los iconos de redes sociales -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
@@ -95,45 +97,70 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contáctanos</h2>
-            <div class="row">
-                <div class="col-md-6">
-                   <form id="contact-form" method="POST">
-                        <!-- Campos ocultos para configuración de FormSubmit -->
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="gracias.html"> <!-- O puedes usar el modal aquí directamente -->
-
-                        <!-- Campos del formulario -->
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Teléfono</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ingresa tu teléfono">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                    </form>
-                </div>
-                <div class="col-md-6">
-                    <h5>Ubicación</h5>
-                    <p>Calle Ficticia 123, Ciudad, País</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+<section id="contacto" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="https://formsubmit.co/mauro.nicolas.coronel@gmail.com" method="POST">
+                    <!-- Campos ocultos para configuración de FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="gracias.html"> <!-- O puedes usar el modal aquí directamente -->
+                    
+                    <!-- Campos del formulario -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ingresa tu teléfono">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h5>Ubicación</h5>
+                <p>Calle Ficticia 123, Ciudad, País</p>
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+<!-- Nuestras Redes -->
+<section id="redes" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Nuestras Redes</h2>
+        <p>Conéctate con nosotros a través de nuestras redes sociales.</p>
+        <div class="social-icons">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/tu_usuario" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/tu_usuario" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/tu_usuario" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/tu_usuario" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+</section>
     <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/5491234567890" target="_blank" class="whatsapp-button">
         <img src="whatsapp-logo.png" alt="WhatsApp">
