@@ -4,8 +4,8 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     const formData = new FormData(this);
 
     // Usamos fetch para enviar el formulario de manera asíncrona
-    fetch("https://formsubmit.co/mauro.nicolas.coronel@gmail.com", {
-        method: "POST",
+    fetch(this.action, {  // Usamos this.action para que apunte a la URL de FormSubmit
+        method: this.method,
         body: formData
     })
         .then(response => {
