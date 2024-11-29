@@ -48,6 +48,21 @@
     object-fit: cover;
 }
 
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-body {
+    font-size: 1rem;
+    text-align: center;
+}
+
 
 /* Botón flotante de WhatsApp */
 .whatsapp-button {
